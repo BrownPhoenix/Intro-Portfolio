@@ -1,37 +1,113 @@
-## Welcome to GitHub Pages
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+ 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+  </style>
+</head>
+<body>
 
-You can use the [editor on GitHub](https://github.com/BrownPhoenix/Intro-Portfolio/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Portfolio</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+<div class="jumbotron">
+  <div class="container text-center" style="background: url(fireflower.jpg);
+  background-color: rgba(194, 0, 0, 0.7);">
+    <h1><font color="red">My Portfolio</h1> </font>     
+    <p><font color="white">Life is short so make the best of what you have<br> and concour all challanges that come your way with a smile.</font></p>
+    <br>
+    
+  </div>
+</div>
+  
+<div class="container-fluid bg-3 text-center">    
+  <h3>Some of my Work</h3><br>
+  <p>click the text to open the program</p>
+  <div class="row">
+    <div class="col-sm-3">
+      <p><a href="robot.html">My Robot</a></p>
+      <img src="robotROAST.png" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-3"> 
+      <p><a href="wordgame.html">My word Game</a></p>
+      <img src="wordgameROAST.png" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-3"> 
+      <p><a href="shop.html">Shopping Cart</a></p>
+      <img src="shoppingchartROAST.png" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-3">
+      <p><a href="hangman.html">HangMan</a></p>
+      <img src="HANGMANROAST.jpg" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+  </div>
+</div><br>
 
-### Markdown
+<div class="container-fluid bg-3 text-center">    
+  <div class="row">
+    <div class="col-sm-3">
+      <p><a href="insultGen.html">Random IsultGenerator</a></p>
+      <img src="inultROAST.png" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-3"> 
+      <p><a href="qouteoOfTheDay.html">Quote of the Day</a></p>
+      <img src="qouteROAST.jpg" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-3"> 
+      <p><a href="to mars.html">A  short roleplay story</a></p>
+      <img src="marsROAST.png" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-3">
+      <p><a href="movie.html">Movie Tickets!</a></p>
+      <img src="movieROAST.png" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+  </div>
+</div><br><br>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+<footer class="container-fluid text-center">
+    <h2>Final assignment</h2>
+    <img src="quiz result.PNG" class="img-responsive" style="width:100%" alt="Image">
+  <p>This is my score for the W3Schools quiz!<br>Honestly this website was suprisingly really fun make!</p>
+</footer>
 
-```markdown
-Syntax highlighted code block
+</body>
+</html>
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/BrownPhoenix/Intro-Portfolio/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
