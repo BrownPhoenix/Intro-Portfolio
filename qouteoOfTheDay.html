@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <title>
+            Qoute of the day
+        </title>
+        <style>
+body {
+    font-family:"Comic Sans MS";
+}
+#buttonBox {
+    margin-top: 30px;
+}
+#thingToDo {
+    margin-top: 20px;
+    background-color: #dadada;
+}
+        </style>
+    </head>
+    <body>
+            <h1>Daily dose of pointless quotes!</h1>
+            Today Is:
+            <div id="todaysdate"></div>
+            <div id="buttonBox">
+                <button id="whattodo" type="button">Whats the qoute of the day?</button>
+            </div>
+            <div id="thingToDo"></div>
+        <script>
+var todayDate = document.getElementById("todaysdate");
+var todoButton = document.getElementById("whattodo");
+
+// add a listener to the whattodo button
+todoButton.addEventListener("click", displayActivity);
+
+// create a new Date object
+var d = new Date();
+
+// call the displayDate() function
+displayDate();
+
+function displayDate() {
+    todayDate.innerHTML = d.toDateString();
+}
+
+function displayActivity() {
+    // find out the day of the week.
+    var dayOfWeek = d.getDay();
+
+    /* set a variable, called youShould, with a different
+       string based on what day of the week it is. */
+    var youShould;
+
+    switch (dayOfWeek) {
+        case 0:
+            youShould = "Oooffff.";
+            break;
+        case 1:
+            youShould = "Games all da way!";
+            break;
+        case 2:
+            youShould = "Workin ala work!";
+            break;
+        case 3:
+            youShould = "Uuuhh NO DONT LOOK AT ME!";
+            break;
+        case 4:
+            youShould = "food!";
+            break;
+        case 5:
+            youShould = "DOnt eat papers...";
+            break;
+        case 6:
+            youShould = "Dog ate my code...";
+            break;
+        default:
+            youShould = "Hmm. Something has gone wrong.";
+            break;
+    }
+
+    // output the value of youShould into the thingToDo div    
+    document.getElementById("thingToDo").innerHTML = youShould;
+}
+        </script>
+    </body>
+</html>
